@@ -1,0 +1,21 @@
+{
+  "name": "EasyMakan - Easy Makan Real Estate",
+  "short_name": "EasyMakan",
+  "description": "Easy Makan real estate solutions - Premium properties in Kolkata",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1628",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/favicon.ico.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

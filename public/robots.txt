@@ -1,0 +1,56 @@
+# Easymakan Website - Robots.txt
+# Allow all search engines to crawl
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://www.easymakandev.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Disallow admin and private pages
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/
+Disallow: /private/
+
+# Allow important pages for SEO
+Allow: /
+Allow: /projects
+Allow: /about
+Allow: /services
+Allow: /contact
+Allow: /blog
+Allow: /1bhk-flats-kolkata
+Allow: /2bhk-flats-kolkata
+Allow: /3bhk-flats-kolkata
+Allow: /buy-flats-kolkata
+Allow: /sell-flat-kolkata
+Allow: /real-estate-kolkata
+Allow: /flats-newtown-kolkata
+Allow: /flats-salt-lake-kolkata
+Allow: /flats-rajarhat-kolkata
+
+# Allow CSS, JS, and images for proper rendering
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

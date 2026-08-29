@@ -1,0 +1,93 @@
+/* Cross-Browser Compatibility Fixes */
+
+/* CSS Reset for consistent rendering */
+* {
+  box-sizing: border-box;
+}
+
+/* Safari video autoplay fix */
+video {
+  -webkit-playsinline: true;
+  -moz-playsinline: true;
+  playsinline: true;
+}
+
+/* Flexbox fixes for older browsers */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Grid fallback for IE11 */
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid > * {
+    flex: 1;
+    min-width: 300px;
+  }
+}
+
+/* Backdrop-filter fallback */
+.backdrop-blur-sm {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+@supports (backdrop-filter: blur(4px)) {
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+/* Smooth scrolling for all browsers */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Safari button appearance fix */
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Firefox input styling */
+input, textarea {
+  -moz-appearance: none;
+}
+
+/* Chrome autofill styling */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+  -webkit-text-fill-color: #0a1628;
+}
+
+/* Object-fit fallback for IE */
+@supports not (object-fit: cover) {
+  .object-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Transform fixes for older browsers */
+.transform {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Transition fixes */
+.transition-all {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
